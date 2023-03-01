@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Metadados -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+    <!-- Título da página (aparece na aba) -->
+    <title>Reciclagem - Cadastro</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+    <div>
+        <h1 id="titulo">Projeto xxx Saúde</h1>
+        <p id="subtitulo">Complete com seus dados para colaborar</p>
+        <br>
+    </div>
+
+    <!-- Início do formulário -->
+    <form>
+
+        <fieldset class="grupo">
+            <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+
+            <!-- Campo de Email -->
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+        </fieldset>
+
+        <fieldset class='grupo'>
+            <!-- Campo idade -->
+            <div class="campo">
+                <label for="idade"><strong>Qual a sua idade?</strong></label>
+                <input type="number" name="idade" id="idade" required>
+            </div>
+
+            <!-- Campo peso -->
+            <div class="campo">
+                <label for="peso"><strong>Qual o seu peso? (kg)</strong></label>
+                <input type="number" name="peso" id="peso" required>
+            </div>
+
+            <!-- Campo altura -->
+            <div class="campo">
+                <label for="altura"><strong>Qual a sua altura? (m)</strong></label>
+                <input type="number" name="altura" id="altura" required>
+            </div>
+
+            <!-- Caixa de texto -->
+            <div class="campo">
+                <br>
+                <label for="detalhe"><strong>Descreva aqui seus hábitos de vida e onde você vive: </strong></label>
+                <textarea rows="6" style="width: 26em" id="detalhe" name="detalhe"></textarea>
+            </div>
+        </fieldset>
+
+        <!-- Botão para enviar o formulário -->
+        <button class="botao" type="submit" onsubmit="">Concluído</button>
+
+    </form>
+
+</body>
+
+</html>
